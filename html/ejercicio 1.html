@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS # 1</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 30px; 
+            width: 90%; 
+            background-color: black;
+            margin-left: 50px;
+        }
+
+        img {
+            padding-top: 10px;
+        }
+
+        td {
+            border: 1px solid #000; 
+            text-align: center;
+            background-color: rgb(88, 88, 187);
+        }
+        p {
+            justify-content: flex-end;
+            text-align: left;
+            margin: 3px;
+            color: white;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption style="border-bottom: 20px solid rgb(96, 96, 130);"><h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">PS4/PS5 Games</h2></caption>
+        <tr>
+            <td><img src="../recursos/imagenes/DX.jpg" alt="Dx" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+
+            <td><img src="../recursos/imagenes/god.webp" alt="god" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+
+            <td><img src="../recursos/imagenes/gtav.webp" alt="gtav" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="../recursos/imagenes/InFAMOUS.webp" alt="Infamous" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+
+            <td><img src="../recursos/imagenes/rd2.jpg" alt="rd2" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+
+            <td><img src="../recursos/imagenes/starwa.webp" alt="starwa" width="300" height="300">
+                <p>do you like it? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button class="add-to-cart" style="font-size: 12px;">Add to Cart</button>&nbsp;&nbsp;
+                    <button class="nah" style="font-size: 12px; width: 80px;">Nah</button></p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        const addToCartButtons = document.querySelectorAll(".add-to-cart");
+        const nahButtons = document.querySelectorAll(".nah");
+
+        // Manejar clic en botón "Add to Cart"
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                alert("Producto agregado al carrito");
+                
+            });
+        });
+
+        // Manejar clic en botón "Nah"
+        nahButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                alert("No se ha agregado el producto al carrito");
+                
+            });
+        });
+    </script>
+</body>
+</html>
